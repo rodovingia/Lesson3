@@ -19,13 +19,35 @@ public class SqrRoot {
         }
         System.out.println("The sum is " + sum);
 
-        int[] b = {1, 3, 4, 2};
-        int search = 7;
-        for (int i = 0; i < b.length; i++) {
-            if (b[i] == search) {
-                System.out.println(search + " found @ index " + i);
-                break;
+        {
+            int[] b = {1, 3, 4, 2};
+            int search = 3;
+            for (int i = 0; i < b.length; i++) {
+                if (b[i] == search) {
+                    System.out.println(search + " found @ index " + i);
+                    break;
+                }
             }
+        }
+
+        {
+            int[] b = {1, 3, 4, 2};
+
+            int search = 4;
+            boolean found = false;
+            for (int i = 0; (!found) && (i < b.length); i++) {
+                found = (b[i] == search);
+                if (found)
+                    System.out.println(search + " found @ index " + i);
+            }
+        }
+
+        int[] b = {1, 3, 4, 2};
+        int search = 2;
+        boolean found = false;
+        for (int i = 0; (!found) && (i < b.length); i++) {
+            if (found = (b[i] == search))
+                System.out.println(search + " found @ index " + i);
         }
 
         for (int i = 0; i < 10; i++) {
